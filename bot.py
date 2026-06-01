@@ -47,7 +47,14 @@ exchange = ccxt.binance({
     "apiKey": API_KEY,
     "secret": API_SECRET,
     "enableRateLimit": True,
-    "options": {"defaultType": "spot"}
+    "options": {"defaultType": "spot"},
+    "urls": {
+        "api": {
+            "public":  "https://api2.binance.com/api/v3",
+            "private": "https://api2.binance.com/api/v3",
+            "sapi":    "https://api2.binance.com/sapi/v1",
+        }
+    }
 })
 
 # ============================================================
